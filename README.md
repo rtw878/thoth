@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="brand%20kit/Peterborough.Chronicle.firstpage-gigapixel-low%20resolution%20v2-6x.png" alt="AI‑powered transcription of historical manuscripts – banner" width="100%" />
+  <img src="assets/banner.png" alt="AI‑powered transcription of historical manuscripts – banner" width="100%" />
 </p>
 
 # Historia Scribe
@@ -10,7 +10,7 @@
 ![Codecov](https://codecov.io/gh/rtw878/historia-scribe/branch/main/graph/badge.svg)
 
 <p align="center">
-  <img src="brand%20kit/needs-to-look-more-minimalist--clean--and-prof1.png" alt="Historia Scribe logo" width="220" />
+  <img src="assets/logo.png" alt="Historia Scribe logo" width="220" />
 </p>
 
 ### Custom-trained handwriting models delivering up to <strong>99% transcription accuracy</strong> on curated collections.
