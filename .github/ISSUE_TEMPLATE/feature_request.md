@@ -1,42 +1,30 @@
 ---
 name: Feature Request
-about: Suggest a new feature or enhancement for Historia Scribe
-description: |
-  Use this template to suggest new features, improvements, or enhancements.
-  Please describe the feature and its benefits clearly.
-labels: ["enhancement"]
+about: Suggest an idea for Historia Scribe
+title: '[FEATURE] '
+labels: ['enhancement', 'triage']
+assignees: ''
 ---
 
-## Feature Description
-
-<!-- A clear and concise description of the feature you'd like to see -->
-
 ## Problem Statement
-
-<!-- What problem does this feature solve? Why is it needed? -->
+A clear and concise description of the problem you're trying to solve. Ex. I'm always frustrated when [...]
 
 ## Proposed Solution
-
-<!-- Describe how you envision this feature working -->
+A clear and concise description of what you want to happen.
 
 ## Alternative Solutions
-
-<!-- Are there any alternative solutions or features you've considered? -->
+A clear and concise description of any alternative solutions or features you've considered.
 
 ## Use Cases
-
-<!-- Describe specific scenarios where this feature would be useful -->
+Describe the specific use cases this feature would enable.
 
 ## Additional Context
-
-<!-- Add any other context, screenshots, or examples about the feature request here -->
+Add any other context, screenshots, or examples about the feature request here.
 
 ## Implementation Notes
+If you have ideas about how this could be implemented, please share them here.
 
-<!-- If you have technical suggestions for implementation, please share them -->
-
-## Would you be willing to help implement this feature?
-
-- [ ] Yes, I'd like to help implement this feature
-- [ ] No, but I can help with testing or documentation
-- [ ] No, I can only provide the feature request
+## Priority
+- [ ] High (blocking my work)
+- [ ] Medium (would be very helpful)
+- [ ] Low (nice to have)

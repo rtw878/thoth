@@ -1,5 +1,10 @@
 # Historia Scribe
 
+![GitHub](https://img.shields.io/github/license/ryan-tris-walmsley/historia-scribe)
+![Python Version](https://img.shields.io/badge/python-3.8%2B-blue)
+![GitHub Actions](https://github.com/ryan-tris-walmsley/historia-scribe/actions/workflows/ci.yml/badge.svg)
+![Codecov](https://codecov.io/gh/ryan-tris-walmsley/historia-scribe/branch/main/graph/badge.svg)
+
 An AI-powered application for transcribing historical handwriting using state-of-the-art machine learning models.
 
 ## Overview
