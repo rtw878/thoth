@@ -1,12 +1,16 @@
+<p align="center">
+  <img src="brand%20kit/Peterborough.Chronicle.firstpage-gigapixel-low%20resolution%20v2-6x.png" alt="AI‑powered transcription of historical manuscripts – banner" width="100%" />
+</p>
+
 # Historia Scribe
 
-![GitHub](https://img.shields.io/github/license/ryan-tris-walmsley/historia-scribe)
+![GitHub](https://img.shields.io/github/license/rtw878/historia-scribe)
 ![Python Version](https://img.shields.io/badge/python-3.8%2B-blue)
 ![GitHub Actions](https://github.com/rtw878/historia-scribe/actions/workflows/ci.yml/badge.svg)
 ![Codecov](https://codecov.io/gh/rtw878/historia-scribe/branch/main/graph/badge.svg)
 
 <p align="center">
-  <img src="Screenshot%20(10).png" alt="Historia Scribe – Historical Handwriting Recognition UI" width="900" />
+  <img src="brand%20kit/needs-to-look-more-minimalist--clean--and-prof1.png" alt="Historia Scribe logo" width="220" />
 </p>
 
 ### Custom-trained handwriting models delivering up to <strong>99% transcription accuracy</strong> on curated collections.
@@ -14,6 +18,10 @@
 Historia Scribe is a clean, fast, and modern desktop app for transcribing historical manuscripts. It pairs a robust preprocessing pipeline with fine‑tuned, task‑specific models trained on period scripts to achieve exceptional results.
 
 > Note: Accuracy is reported from internal evaluations on representative, curated datasets. Results can vary based on handwriting style, scan quality, and preprocessing. See “Accuracy and Models” below for details.
+
+<p align="center">
+  <img src="Screenshot%20(10).png" alt="Historia Scribe – Historical Handwriting Recognition UI" width="900" />
+</p>
 
 ## Highlights
 
