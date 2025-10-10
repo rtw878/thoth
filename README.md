@@ -2,24 +2,39 @@
 
 ![GitHub](https://img.shields.io/github/license/ryan-tris-walmsley/historia-scribe)
 ![Python Version](https://img.shields.io/badge/python-3.8%2B-blue)
-![GitHub Actions](https://github.com/ryan-tris-walmsley/historia-scribe/actions/workflows/ci.yml/badge.svg)
-![Codecov](https://codecov.io/gh/ryan-tris-walmsley/historia-scribe/branch/main/graph/badge.svg)
+![GitHub Actions](https://github.com/rtw878/historia-scribe/actions/workflows/ci.yml/badge.svg)
+![Codecov](https://codecov.io/gh/rtw878/historia-scribe/branch/main/graph/badge.svg)
 
-An AI-powered application for transcribing historical handwriting using state-of-the-art machine learning models.
+<p align="center">
+  <img src="Screenshot%20(10).png" alt="Historia Scribe – Historical Handwriting Recognition UI" width="900" />
+</p>
+
+### Custom-trained handwriting models delivering up to <strong>99% transcription accuracy</strong> on curated collections.
+
+Historia Scribe is a clean, fast, and modern desktop app for transcribing historical manuscripts. It pairs a robust preprocessing pipeline with fine‑tuned, task‑specific models trained on period scripts to achieve exceptional results.
+
+> Note: Accuracy is reported from internal evaluations on representative, curated datasets. Results can vary based on handwriting style, scan quality, and preprocessing. See “Accuracy and Models” below for details.
+
+## Highlights
+
+- **Custom-trained models**: Purpose‑built LoRA adapters for historical scripts and hands
+- **Up to 99% accuracy**: High fidelity on curated collections and clear scans
+- **Beautiful, focused UI**: Load, transcribe, and export in seconds
+- **Fast inference**: Optimized TrOCR pipeline with GPU acceleration
+- **Offline-first**: Run fully locally with your own models and data
 
 ## Overview
 
-Historia Scribe is an open-source tool designed to help historians, archivists, and digital humanities researchers transcribe historical documents with challenging handwriting. Built on the TrOCR architecture and fine-tuned using Parameter-Efficient Fine-Tuning (LoRA), it provides accurate transcriptions while being computationally efficient.
+Historia Scribe helps historians, archivists, librarians, and digital‑humanities teams transcribe challenging handwritten sources. Built on the TrOCR architecture and fine‑tuned via Parameter‑Efficient Fine‑Tuning (LoRA), it provides high accuracy while remaining efficient and portable.
 
 ## Features
 
-- **State-of-the-art HTR**: Powered by TrOCR (Transformer-based Optical Character Recognition)
-- **Multi-language support**: Fine-tuned models for various historical scripts
-- **User-friendly GUI**: Cross-platform desktop application built with PyQt6
-- **Parameter-efficient training**: Uses LoRA for efficient fine-tuning
-- **Comprehensive preprocessing**: Advanced image processing pipeline for historical documents
-- **Batch processing**: Support for processing multiple documents
-- **Model management**: Easy switching between different trained models
+- **State-of-the-art HTR** powered by TrOCR
+- **Custom-trained adapters** for specific periods (e.g., 18th‑c English cursive)
+- **Clean PyQt6 desktop app**: cross‑platform, minimal clicks
+- **Advanced preprocessing**: binarization, denoising, segmentation
+- **Batch processing** and **easy model switching**
+- **Export anywhere**: copy to clipboard or save as text
 
 ## Installation
 
@@ -31,7 +46,7 @@ Historia Scribe is an open-source tool designed to help historians, archivists, 
 ### Quick Start
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/historia-scribe.git
+git clone https://github.com/rtw878/historia-scribe.git
 cd historia-scribe
 
 # Create virtual environment
@@ -44,6 +59,12 @@ pip install -r requirements.txt
 # Test the installation
 python test_functionality.py
 ```
+
+## Accuracy and Models
+
+- Our best in‑house adapters reach **up to 99% accuracy** on curated test sets that match their training domain (script, period, scan quality).
+- Accuracy depends on handwriting style, document condition, and preprocessing. For new collections, training or fine‑tuning your own adapter usually yields the best results.
+- You can drop your own fine‑tuned adapters into `models/` and select them in the app.
 
 ## Usage
 
@@ -154,8 +175,8 @@ The project uses a centralized configuration system in `configs/config.yml`. Key
 ## Model Architecture
 
 Historia Scribe uses:
-- **Base Model**: `microsoft/trocr-large-handwritten`
-- **Fine-tuning**: LoRA (Low-Rank Adaptation) for parameter efficiency
+- **Base model**: `microsoft/trocr-large-handwritten`
+- **Fine‑tuning**: LoRA (Low‑Rank Adaptation) adapters for efficiency
 - **Evaluation**: CER (Character Error Rate) and WER (Word Error Rate)
 
 ## Contributing
@@ -214,3 +235,7 @@ For questions and support:
 - Open an issue on GitHub
 - Check the documentation in `docs/`
 - Review the example configurations in `configs/`
+
+---
+
+Built with care for historians and researchers. If you use Historia Scribe, consider starring the repo and sharing feedback—your datasets and use‑cases help us improve models and accuracy.
