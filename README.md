@@ -8,7 +8,7 @@
 ![Python Version](https://img.shields.io/badge/python-3.8%2B-blue)
 
 <p align="center">
-  <img src="../brand%20kit/type-logo-no-background.png" alt="Thoth logo" width="260" />
+  <img src="assets/logo.png" alt="Thoth logo" width="260" />
 </p>
 
 ### Custom-trained handwriting models delivering up to <strong>99% transcription accuracy</strong> on curated collections.
