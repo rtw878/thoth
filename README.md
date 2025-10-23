@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/new-logos/PRIMARY-LOCKUP-NO-BACKGROUND.png" alt="Thoth – AI‑powered transcription of historical manuscripts" width="100%" />
+  <img src="assets/new-logos/PRIMARY-LOCKUP.svg" alt="Thoth – AI‑powered transcription of historical manuscripts" width="100%" />
 </p>
 
 # Thoth
@@ -8,7 +8,7 @@
 ![Python Version](https://img.shields.io/badge/python-3.8%2B-blue)
 
 <p align="center">
-  <img src="assets/new-logos/type-logo.png" alt="Thoth logo" width="260" />
+  <img src="assets/new-logos/type-logo.svg" alt="Thoth logo" width="260" />
 </p>
 
 ### Custom-trained handwriting models delivering up to <strong>99% transcription accuracy</strong> on curated collections.
