@@ -3,7 +3,7 @@ requires = ["setuptools>=61.0", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "historia-scribe"
+name = "thoth"
 version = "0.1.0"
 description = "AI-powered historical handwriting recognition system"
 readme = "README.md"
@@ -75,13 +75,13 @@ docs = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/ryan-tris-walmsley/historia-scribe"
-Documentation = "https://historia-scribe.readthedocs.io/"
-"Bug Tracker" = "https://github.com/ryan-tris-walmsley/historia-scribe/issues"
-"Source Code" = "https://github.com/ryan-tris-walmsley/historia-scribe"
+Homepage = "https://github.com/rtw878/thoth"
+Documentation = "https://thoth.readthedocs.io/"
+"Bug Tracker" = "https://github.com/rtw878/thoth/issues"
+"Source Code" = "https://github.com/rtw878/thoth"
 
 [project.scripts]
-historia-scribe = "app.main:main"
+thoth = "app.main:main"
 
 [tool.setuptools]
 packages = {find = {where = ["src"]}}

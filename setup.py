@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Setup script for Historia Scribe
+Setup script for Thoth
 
 A Python package for historical handwriting recognition using AI.
 """
@@ -17,18 +17,18 @@ with open("requirements.txt", "r", encoding="utf-8") as fh:
     requirements = [line.strip() for line in fh if line.strip() and not line.startswith("#")]
 
 setup(
-    name="historia-scribe",
+    name="thoth",
     version="0.1.0",
     author="Ryan Tris Walmsley",
     author_email="ryan.tris.walmsley@gmail.com",
     description="AI-powered historical handwriting recognition system",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/ryan-tris-walmsley/historia-scribe",
+    url="https://github.com/rtw878/thoth",
     project_urls={
-        "Bug Tracker": "https://github.com/ryan-tris-walmsley/historia-scribe/issues",
-        "Documentation": "https://historia-scribe.readthedocs.io/",
-        "Source Code": "https://github.com/ryan-tris-walmsley/historia-scribe",
+        "Bug Tracker": "https://github.com/rtw878/thoth/issues",
+        "Documentation": "https://thoth.readthedocs.io/",
+        "Source Code": "https://github.com/rtw878/thoth",
     },
     classifiers=[
         "Development Status :: 3 - Alpha",
@@ -65,16 +65,11 @@ setup(
     },
     entry_points={
         "console_scripts": [
-            "historia-scribe=app.main:main",
+            "thoth=app.main:main",
         ],
     },
     include_package_data=True,
-    package_data={
-        "historia_scribe": [
-            "configs/*.yml",
-            "data/*",
-        ],
-    },
+    package_data={},
     keywords=[
         "ocr", "handwriting", "recognition", "historical", "documents",
         "ai", "machine-learning", "digital-humanities", "transcription"

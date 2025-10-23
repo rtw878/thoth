@@ -1,26 +1,24 @@
 <p align="center">
-  <img src="assets/banner.png" alt="AI‑powered transcription of historical manuscripts – banner" width="100%" />
+  <img src="assets/banner.png" alt="Thoth – AI‑powered transcription of historical manuscripts" width="100%" />
 </p>
 
-# Historia Scribe
+# Thoth
 
-![GitHub](https://img.shields.io/github/license/rtw878/historia-scribe)
+![License](https://img.shields.io/github/license/rtw878/thoth)
 ![Python Version](https://img.shields.io/badge/python-3.8%2B-blue)
-![GitHub Actions](https://github.com/rtw878/historia-scribe/actions/workflows/ci.yml/badge.svg)
-![Codecov](https://codecov.io/gh/rtw878/historia-scribe/branch/main/graph/badge.svg)
 
 <p align="center">
-  <img src="assets/logo.png" alt="Historia Scribe logo" width="220" />
+  <img src="../brand%20kit/type-logo-no-background.png" alt="Thoth logo" width="260" />
 </p>
 
 ### Custom-trained handwriting models delivering up to <strong>99% transcription accuracy</strong> on curated collections.
 
-Historia Scribe is a clean, fast, and modern desktop app for transcribing historical manuscripts. It pairs a robust preprocessing pipeline with fine‑tuned, task‑specific models trained on period scripts to achieve exceptional results.
+Thoth is a clean, fast, and modern desktop app for transcribing historical manuscripts. It pairs a robust preprocessing pipeline with fine‑tuned, task‑specific models trained on period scripts to achieve exceptional results.
 
 > Note: Accuracy is reported from internal evaluations on representative, curated datasets. Results can vary based on handwriting style, scan quality, and preprocessing. See “Accuracy and Models” below for details.
 
 <p align="center">
-  <img src="Screenshot%20(10).png" alt="Historia Scribe – Historical Handwriting Recognition UI" width="900" />
+  <img src="Screenshot%20(10).png" alt="Thoth – Historical Handwriting Recognition UI" width="900" />
 </p>
 
 ## Highlights
@@ -33,7 +31,7 @@ Historia Scribe is a clean, fast, and modern desktop app for transcribing histor
 
 ## Overview
 
-Historia Scribe helps historians, archivists, librarians, and digital‑humanities teams transcribe challenging handwritten sources. Built on the TrOCR architecture and fine‑tuned via Parameter‑Efficient Fine‑Tuning (LoRA), it provides high accuracy while remaining efficient and portable.
+Thoth helps historians, archivists, librarians, and digital‑humanities teams transcribe challenging handwritten sources. Built on the TrOCR architecture and fine‑tuned via Parameter‑Efficient Fine‑Tuning (LoRA), it provides high accuracy while remaining efficient and portable.
 
 ## Features
 
@@ -54,8 +52,8 @@ Historia Scribe helps historians, archivists, librarians, and digital‑humaniti
 ### Quick Start
 ```bash
 # Clone the repository
-git clone https://github.com/rtw878/historia-scribe.git
-cd historia-scribe
+git clone https://github.com/rtw878/thoth.git
+cd thoth
 
 # Create virtual environment
 python -m venv venv
@@ -125,7 +123,7 @@ python src/preprocess/image_pipeline.py path/to/folder/
 ## Project Structure
 
 ```
-historia-scribe/
+thoth/
 ├── LICENSE
 ├── README.md
 ├── requirements.txt
@@ -182,7 +180,7 @@ The project uses a centralized configuration system in `configs/config.yml`. Key
 
 ## Model Architecture
 
-Historia Scribe uses:
+Thoth uses:
 - **Base model**: `microsoft/trocr-large-handwritten`
 - **Fine‑tuning**: LoRA (Low‑Rank Adaptation) adapters for efficiency
 - **Evaluation**: CER (Character Error Rate) and WER (Word Error Rate)
@@ -226,7 +224,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Citation
 
-If you use Historia Scribe in your research, please cite:
+If you use Thoth in your research, please cite:
 
 *[TODO: Add citation information]*
 
@@ -246,4 +244,4 @@ For questions and support:
 
 ---
 
-Built with care for historians and researchers. If you use Historia Scribe, consider starring the repo and sharing feedback—your datasets and use‑cases help us improve models and accuracy.
+Built with care for historians and researchers. If you use Thoth, consider starring the repo and sharing feedback—your datasets and use‑cases help us improve models and accuracy.

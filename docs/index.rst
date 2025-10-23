@@ -1,12 +1,12 @@
-.. Historia Scribe documentation master file, created by
+.. Thoth documentation master file, created by
    sphinx-quickstart on Thu Jan 1 00:00:00 2025.
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to Historia Scribe's documentation!
-===========================================
+Welcome to Thoth's documentation!
+=================================
 
-Historia Scribe is an AI-powered application for transcribing historical handwriting
+Thoth is an AI-powered application for transcribing historical handwriting
 using state-of-the-art machine learning models. Built on the TrOCR architecture
 and fine-tuned using Parameter-Efficient Fine-Tuning (LoRA), it provides accurate
 transcriptions while being computationally efficient.
@@ -23,7 +23,7 @@ transcriptions while being computationally efficient.
 Overview
 --------
 
-Historia Scribe is designed to help historians, archivists, and digital humanities
+Thoth is designed to help historians, archivists, and digital humanities
 researchers transcribe historical documents with challenging handwriting. The project
 combines modern machine learning techniques with a user-friendly interface to make
 historical document transcription accessible to non-technical users.

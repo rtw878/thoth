@@ -17,9 +17,9 @@ sys.path.insert(0, os.path.abspath('../src'))
 
 # -- Project information -----------------------------------------------------
 
-project = 'Historia Scribe'
-copyright = '2025, Historia Scribe Team'
-author = 'Historia Scribe Team'
+project = 'Thoth'
+copyright = '2025, Thoth Team'
+author = 'Thoth Team'
 
 # The full version, including alpha/beta/rc tags
 release = '0.1.0'
