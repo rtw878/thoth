@@ -12,13 +12,7 @@
 ![Python Version](https://img.shields.io/badge/python-3.8%2B-blue)
 ![Status](https://img.shields.io/badge/status-active-success)
 
-<p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="dev/assets/new-logos/PRIMARY-LOCKUP-cropped-white.svg">
-    <source media="(prefers-color-scheme: light)" srcset="dev/assets/new-logos/PRIMARY-LOCKUP-cropped.svg">
-    <img alt="Thoth wordmark" src="dev/assets/new-logos/PRIMARY-LOCKUP-cropped.svg" width="420" />
-  </picture>
-</p>
+
 
 ### Custom-trained handwriting models delivering up to <strong>99% transcription accuracy</strong> on curated collections.
 
