@@ -1,16 +1,16 @@
-<p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="dev/assets/new-logos/PRIMARY-LOCKUP-cropped-white.svg">
-    <source media="(prefers-color-scheme: light)" srcset="dev/assets/new-logos/PRIMARY-LOCKUP-cropped.svg">
-    <img alt="Thoth – AI‑powered transcription of historical manuscripts" src="dev/assets/new-logos/PRIMARY-LOCKUP-cropped.svg" width="100%" />
-  </picture>
-</p>
-
 # Thoth
 
 ![License](https://img.shields.io/github/license/rtw878/thoth)
 ![Python Version](https://img.shields.io/badge/python-3.8%2B-blue)
 ![Status](https://img.shields.io/badge/status-active-success)
+
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="dev/assets/new-logos/PRIMARY-LOCKUP-cropped-white.svg">
+    <source media="(prefers-color-scheme: light)" srcset="dev/assets/new-logos/PRIMARY-LOCKUP-cropped.svg">
+    <img alt="Thoth wordmark" src="dev/assets/new-logos/PRIMARY-LOCKUP-cropped.svg" width="420" />
+  </picture>
+</p>
 
 
 
