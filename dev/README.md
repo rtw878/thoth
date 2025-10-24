@@ -27,7 +27,7 @@ Thoth is a clean, fast, and modern desktop app for transcribing historical manus
 > Note: Accuracy is reported from internal evaluations on representative, curated datasets. Results can vary based on handwriting style, scan quality, and preprocessing. See "Accuracy and Models" below for details.
 
 <p align="center">
-  <img src="Screenshot%20(10).png" alt="Thoth – Historical Handwriting Recognition UI" width="900" />
+  <img src="Screenshot%202025-10-24%20215814.png" alt="Thoth – Historical Handwriting Recognition UI" width="900" />
 </p>
 
 ## Highlights
