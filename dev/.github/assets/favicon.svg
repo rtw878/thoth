@@ -1,0 +1,15 @@
+<svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+  <title>Thoth - AI-powered historical handwriting recognition</title>
+  <desc>Thoth logo icon for favicon</desc>
+  <style>
+    @media (prefers-color-scheme: dark) {
+      .icon-fill { fill: #60A5FA; }
+    }
+    @media (prefers-color-scheme: light) {
+      .icon-fill { fill: #1E40AF; }
+    }
+  </style>
+  <path class="icon-fill" d="M16 2C8.27 2 2 8.27 2 16s6.27 14 14 14 14-6.27 14-14S23.73 2 16 2zm0 26C9.37 28 4 22.63 4 16S9.37 4 16 4s12 5.37 12 12-5.37 12-12 12z"/>
+  <path class="icon-fill" d="M16 8c-4.42 0-8 3.58-8 8s3.58 8 8 8 8-3.58 8-8-3.58-8-8-8zm0 14c-3.31 0-6-2.69-6-6s2.69-6 6-6 6 2.69 6 6-2.69 6-6 6z"/>
+  <path class="icon-fill" d="M16 12c-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4z"/>
+</svg>

@@ -1,0 +1,124 @@
+# Historia Scribe Configuration File
+# Centralized configuration for all project parameters
+
+# Data paths and directories
+data_paths:
+  raw_data_dir: "data/raw"
+  interim_data_dir: "data/interim"
+  processed_data_dir: "data/processed"
+  models_dir: "models"
+
+# Preprocessing parameters
+preprocessing_params:
+  # Binarization parameters
+  binarization:
+    method: "sauvola"  # Options: otsu, sauvola, adaptive
+    window_size: 25
+    k: 0.2
+  
+  # Deskewing parameters
+  deskewing:
+    enabled: true
+    max_angle: 10.0
+  
+  # Noise removal parameters
+  noise_removal:
+    enabled: true
+    method: "median"  # Options: median, gaussian, bilateral
+    kernel_size: 3
+  
+  # Line segmentation parameters
+  line_segmentation:
+    method: "projection"  # Options: projection, contour
+    min_line_height: 20
+    max_line_height: 200
+
+# Model parameters
+model_params:
+  # Base model configuration
+  base_model: "microsoft/trocr-large-handwritten"  # Recommended base model from Section 2.1
+  processor_name: "microsoft/trocr-large-handwritten"
+  
+  # LoRA configuration (Parameter-Efficient Fine-Tuning)
+  lora:
+    r: 16  # Rank of LoRA matrices
+    lora_alpha: 32  # LoRA scaling parameter
+    lora_dropout: 0.1
+    target_modules: ["q_proj", "v_proj"]  # Modules to apply LoRA to
+  
+  # Model output configuration
+  max_length: 512
+  beam_size: 4
+
+# Training arguments
+training_args:
+  # Basic training parameters
+  learning_rate: 5e-4
+  per_device_train_batch_size: 8
+  per_device_eval_batch_size: 16
+  num_train_epochs: 10
+  warmup_steps: 500
+  
+  # Optimization parameters
+  weight_decay: 0.01
+  adam_epsilon: 1e-8
+  max_grad_norm: 1.0
+  
+  # Training schedule
+  learning_rate_scheduler_type: "linear"
+  lr_scheduler_kwargs:
+    num_warmup_steps: 500
+  
+  # Checkpointing and logging
+  logging_steps: 100
+  eval_steps: 500
+  save_steps: 1000
+  save_total_limit: 3
+  
+  # Early stopping
+  early_stopping_patience: 3
+  early_stopping_threshold: 0.01
+
+# Evaluation parameters
+evaluation_params:
+  metrics:
+    - "cer"  # Character Error Rate
+    - "wer"  # Word Error Rate
+  
+  # Normalization for evaluation
+  text_normalization:
+    lowercase: true
+    remove_punctuation: false
+    collapse_whitespace: true
+
+# Dataset configuration
+dataset_config:
+  # Dataset splits
+  train_split: 0.8
+  val_split: 0.1
+  test_split: 0.1
+  
+  # Data augmentation parameters
+  augmentation:
+    enabled: true
+    rotation_range: [-2, 2]  # Degrees
+    scale_range: [0.95, 1.05]
+    brightness_range: [0.9, 1.1]
+    contrast_range: [0.9, 1.1]
+    elastic_distortion: true  # Simulate parchment warping
+    
+# Application settings
+app_settings:
+  gui:
+    window_width: 1200
+    window_height: 800
+    theme: "Fusion"  # PyQt6 theme
+  
+  # Model selection
+  available_models:
+    - name: "18th Century English Cursive"
+      path: "models/english_cursive_lora"
+      language: "en"
+    - name: "Early Modern German Fraktur"
+      path: "models/german_fraktur_lora"
+      language: "de"

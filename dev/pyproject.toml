@@ -1,0 +1,114 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "thoth"
+version = "0.1.0"
+description = "AI-powered historical handwriting recognition system"
+readme = "README.md"
+authors = [
+    {name = "Ryan Tris Walmsley", email = "ryan.tris.walmsley@gmail.com"}
+]
+license = {text = "MIT"}
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Science/Research",
+    "Intended Audience :: Education",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: Scientific/Engineering :: Image Recognition",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Operating System :: OS Independent",
+]
+keywords = [
+    "ocr", "handwriting", "recognition", "historical", "documents",
+    "ai", "machine-learning", "digital-humanities", "transcription"
+]
+requires-python = ">=3.8"
+dependencies = [
+    "torch>=2.0.0",
+    "torchvision>=0.15.0",
+    "transformers>=4.30.0",
+    "datasets>=2.12.0",
+    "evaluate>=0.4.0",
+    "accelerate>=0.20.0",
+    "peft>=0.4.0",
+    "Pillow>=10.0.0",
+    "opencv-python>=4.8.0",
+    "scikit-image>=0.21.0",
+    "PyQt6>=6.5.0",
+    "pyinstaller>=5.12.0",
+    "Sphinx>=7.0.0",
+    "sphinx-rtd-theme>=1.3.0",
+    "pylint>=2.17.0",
+    "black>=23.0.0",
+    "jiwer>=3.0.0",
+    "python-levenshtein>=0.21.0",
+    "numpy>=1.24.0",
+    "pandas>=2.0.0",
+    "scipy>=1.10.0",
+    "matplotlib>=3.7.0",
+    "seaborn>=0.12.0",
+    "PyYAML>=6.0",
+    "fastapi>=0.100.0",
+    "uvicorn>=0.23.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+    "pytest-cov>=4.0.0",
+    "black>=23.0.0",
+    "isort>=5.12.0",
+    "pylint>=2.17.0",
+    "mypy>=1.0.0",
+]
+docs = [
+    "sphinx>=7.0.0",
+    "sphinx-rtd-theme>=1.3.0",
+    "sphinx-autodoc-typehints>=1.25.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/rtw878/thoth"
+Documentation = "https://thoth.readthedocs.io/"
+"Bug Tracker" = "https://github.com/rtw878/thoth/issues"
+"Source Code" = "https://github.com/rtw878/thoth"
+
+[project.scripts]
+thoth = "app.main:main"
+
+[tool.setuptools]
+packages = {find = {where = ["src"]}}
+
+[tool.setuptools.package-dir]
+"" = "src"
+
+[tool.black]
+line-length = 88
+target-version = ['py38']
+
+[tool.isort]
+profile = "black"
+line_length = 88
+
+[tool.pylint."MESSAGES CONTROL"]
+disable = [
+    "C0103",  # invalid-name
+    "C0301",  # line-too-long
+    "R0903",  # too-few-public-methods
+    "R0913",  # too-many-arguments
+    "W0613",  # unused-argument
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+python_classes = ["Test*"]
+python_functions = ["test_*"]
+addopts = "-v --cov=src --cov-report=html --cov-report=term-missing"

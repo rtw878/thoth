@@ -1,0 +1,10 @@
+{
+  "_name_or_path": "microsoft/trocr-large-handwritten",
+  "architectures": [
+    "VisionEncoderDecoderModel"
+  ],
+  "model_type": "vision-encoder-decoder",
+  "peft_type": "LORA",
+  "base_model_name_or_path": "microsoft/trocr-large-handwritten",
+  "task_type": "SEQ_2_SEQ_LM"
+}

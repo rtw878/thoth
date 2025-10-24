@@ -1,0 +1,17 @@
+/* Invert logo for dark mode while keeping it black on light mode */
+img[src*="PRIMARY-LOCKUP-cropped.svg"],
+img.logo,
+.wy-side-nav-search .logo,
+.wy-nav-top img {
+  filter: none;
+}
+
+@media (prefers-color-scheme: dark) {
+  img[src*="PRIMARY-LOCKUP-cropped.svg"],
+  img.logo,
+  .wy-side-nav-search .logo,
+  .wy-nav-top img {
+    filter: invert(1);
+  }
+}
+
