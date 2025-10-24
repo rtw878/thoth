@@ -1,24 +1,34 @@
 <p align="center">
-  <img src="assets/new-logos/PRIMARY-LOCKUP-cropped.svg" alt="Thoth – AI‑powered transcription of historical manuscripts" width="100%" />
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="dev/assets/new-logos/PRIMARY-LOCKUP-cropped-white.svg">
+    <source media="(prefers-color-scheme: light)" srcset="dev/assets/new-logos/PRIMARY-LOCKUP-cropped.svg">
+    <img alt="Thoth – AI‑powered transcription of historical manuscripts" src="dev/assets/new-logos/PRIMARY-LOCKUP-cropped.svg" width="100%" />
+  </picture>
 </p>
 
 # Thoth
 
 ![License](https://img.shields.io/github/license/rtw878/thoth)
 ![Python Version](https://img.shields.io/badge/python-3.8%2B-blue)
+![Status](https://img.shields.io/badge/status-active-success)
 
 <p align="center">
-  <img src="assets/new-logos/type-logo.svg" alt="Thoth logo" width="260" />
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="dev/assets/new-logos/PRIMARY-LOCKUP-cropped-white.svg">
+    <source media="(prefers-color-scheme: light)" srcset="dev/assets/new-logos/PRIMARY-LOCKUP-cropped.svg">
+    <img alt="Thoth wordmark" src="dev/assets/new-logos/PRIMARY-LOCKUP-cropped.svg" width="420" />
+  </picture>
 </p>
 
 ### Custom-trained handwriting models delivering up to <strong>99% transcription accuracy</strong> on curated collections.
 
 Thoth is a clean, fast, and modern desktop app for transcribing historical manuscripts. It pairs a robust preprocessing pipeline with fine‑tuned, task‑specific models trained on period scripts to achieve exceptional results.
 
-> Note: Accuracy is reported from internal evaluations on representative, curated datasets. Results can vary based on handwriting style, scan quality, and preprocessing. See “Accuracy and Models” below for details.
+> Note: Accuracy is reported from internal evaluations on representative, curated datasets. Results can vary based on handwriting style, scan quality, and preprocessing. See "Accuracy and Models" below for details.
 
 <p align="center">
-  <img src="Screenshot%20(10).png" alt="Thoth – Historical Handwriting Recognition UI" width="900" />
+  <img src="dev/Screenshot%20(10).png" alt="Thoth – Historical Handwriting Recognition UI" width="900" />
+  
 </p>
 
 ## Highlights
@@ -245,3 +255,5 @@ For questions and support:
 ---
 
 Built with care for historians and researchers. If you use Thoth, consider starring the repo and sharing feedback—your datasets and use‑cases help us improve models and accuracy.
+
+
