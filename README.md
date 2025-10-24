@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/new-logos/PRIMARY-LOCKUP.svg" alt="Thoth – AI‑powered transcription of historical manuscripts" width="100%" />
+  <img src="assets/new-logos/PRIMARY-LOCKUP-cropped.svg" alt="Thoth – AI‑powered transcription of historical manuscripts" width="100%" />
 </p>
 
 # Thoth
